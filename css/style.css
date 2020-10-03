@@ -1,7 +1,7 @@
 :root {
   --c-text: #FFFFFF;
   --c-button: #01cc4f;
-  --c-dark:#0C1226;
+  --c-dark: #0C1226;
 }
 
 * {
@@ -128,6 +128,28 @@ body button:hover {
 body button:active {
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
+  -webkit-box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.75);
+}
+
+body .signature {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  padding: 8px 15px;
+  background: #0C1226;
+  border-radius: 99px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+body .signature a {
+  text-decoration: none;
+  color: var(--c-text);
+  font-weight: bold;
+}
+
+body .signature:hover {
   -webkit-box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.75);
 }
