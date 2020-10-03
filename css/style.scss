@@ -1,0 +1,100 @@
+:root {
+    --c-text: #FFFFFF;
+    --c-button: #01cc4f;
+    --c-dark:#0C1226;
+}
+
+@import 'reset';
+
+body {
+    display: grid;
+    place-items: center;
+
+    .alert {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 18px 42px;
+        background: #0C1226;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 30px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 300ms all;
+      
+        &.active {
+          top: 20px;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+    h1 {
+        color: var(--c-text);
+        font-size: 72px;
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+    }
+
+    .code {
+        padding: .8em 1.8em;
+        font-weight: bold;
+        background: var(--c-text);
+        border-radius: 99px;
+        font-size: 18px;
+        color: #0C1226;
+        line-height: 29px;
+        position: relative;
+        cursor: pointer;
+        transition: all 300ms;
+        input{
+            position: absolute;
+            opacity: 0;
+            left: -999999px;
+        }
+        .click-to-copy {
+            position: absolute;
+            top: -28px;
+            left: 50%;
+            border-radius: 99px;
+            transform: translateX(-50%);
+            font-size: 12px;
+            background-color: var(--c-dark);
+            color: var(--c-text);
+            padding: .2em 1em;
+            transition: all 300ms;
+        }
+        &:hover{
+            box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.75);
+            .click-to-copy {
+                top:-20px;
+            }
+        }
+
+    }
+
+    button {
+        padding: 1em 2em;
+        border-radius: 99px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 3px;
+        color: var(--c-text);
+        background-color: var(--c-button);
+        box-shadow: 0px 15px 40px -3px rgba(0, 0, 0, 0.75);
+        cursor: pointer;
+        transition: all 300ms;
+
+        &:hover {
+            transform: translateY(2px);
+            box-shadow: 0px 7px 18px -3px rgba(0, 0, 0, 0.75);
+        }
+
+        &:active {
+            transform: translateY(5px);
+            box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.75);
+        }
+    }
+
+}
