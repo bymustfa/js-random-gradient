@@ -32,6 +32,7 @@ function copy() {
     input.value = writeTex
     input.select();
     document.execCommand('copy');
+    input.blur()
     notification('Code copied to your clipboard 👍')
 }
 
