@@ -28,6 +28,7 @@ body {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  padding: 15px;
 }
 
 body .alert {
