@@ -1,3 +1,3 @@
 # Js Random Gradient Web App
 
-[This Demo Link](https://musti37.github.io/js-random-gradient/)
+[This Demo Link](https://bymustfa.github.io/js-random-gradient/)
