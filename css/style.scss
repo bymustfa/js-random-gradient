@@ -10,7 +10,7 @@ body {
     display: grid;
     place-items: center;
     padding: 15px;
-
+    transition: 300ms all;
     .alert {
         position: fixed;
         top: 10px;

@@ -29,6 +29,8 @@ body {
   display: grid;
   place-items: center;
   padding: 15px;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
 }
 
 body .alert {
